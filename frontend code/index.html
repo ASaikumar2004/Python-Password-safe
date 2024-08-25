@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Safe</title>
+    <link rel="stylesheet" href="styleS.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Password Safe</h1>
+        <div>
+            <h2>Add Password</h2>
+            <input type="text" id="site" placeholder="Site">
+            <input type="password" id="password" placeholder="Password">
+            <button onclick="addPassword()">Add</button>
+        </div>
+        <div>
+            <h2>Get Password</h2>
+            <input type="text" id="getSite" placeholder="Site">
+            <button onclick="getPassword()">Get</button>
+            <p id="passwordDisplay"></p>
+        </div>
+        <div>
+            <h2>List All Passwords</h2>
+            <button onclick="listPasswords()">List</button>
+            <pre id="passwordsList"></pre>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
